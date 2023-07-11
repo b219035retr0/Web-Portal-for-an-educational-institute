@@ -1,0 +1,306 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ol{
+  list-style-type: "upper-roman";
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+input{
+  padding: 10px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+iframe{
+  width:48vw;
+  height: 42%;
+ 
+}
+
+.statcard{
+  width:50px;
+  height:45px;
+}
+.summarycard{
+  width:600px;
+  
+}
+
+/* .imgslider{
+  background-color: yellow;
+
+} */
+.caraitem{
+  width:48vw;
+  height:60px;
+}
+ 
+
+/* 
+
+/* navbar style start  */
+
+ul {
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+li {
+/* margin-left: 20px; */
+position: relative;
+/* text-decoration: none; */
+}
+
+a {
+color: #fff;
+text-decoration: none;
+}
+
+
+
+.dropdown-menu {
+background-color: #333;
+border-radius: 4px;
+display: none;
+left: 0;
+padding: 10px;
+position: absolute;
+top: 100%;
+width: 200px;
+}
+
+.dropdown-menu li {
+margin: 10px 0;
+/* font-size: 1rem; */
+text-align: left;
+}
+
+.dropdown-menu li a {
+color: #fff;
+font-size: large;
+}
+
+/* .dropdown-menu li a:hover {
+text-decoration: underline;
+} */
+.dropdown-menu li a:active{
+  text-decoration: none;
+  background-color: transparent;
+}
+li:hover .dropdown-menu {
+display: block;
+}
+
+@media screen and (max-width: 920px) {
+nav {
+flex-direction: column;
+align-items: center;
+}
+
+ul {
+flex-direction: column;
+}
+
+li {
+margin: 10px 0;
+}
+
+
+}
+.dropdown-menu li a:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width 0.7s ease, background-color 0.5s ease;
+}
+
+.dropdown-menu li a:hover:after {
+  width: 100%;
+  background: #ffdd40;
+  text-decoration: none;
+}
+/* .dropdown{
+  height:6rem;
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color:white;
+  position:sticky;
+  z-index: 50;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.dropdown-menu{
+  width:15rem;
+  text-align: center;
+  color:black;
+  background: lightgray;
+  position: relative;
+  cursor:pointer;
+  padding:1.5rem;
+}
+.dropdown-menu:hover{
+  color:white;
+  background: gray;
+}
+.dropdown-list{
+  list-style-type:none;
+  position: absolute;
+  bottom:-1rem;
+  left:0;
+  width:100%;
+  background: gray;
+}
+.dropdown-list>li{
+  border:1px solid transparent;
+}
+.dropdown-list>li:hover{
+  border:1px solid white;
+} */
+.main-nav {
+  width: 100%;
+  height: 10rem;
+  display: grid;
+  grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+
+
+.menu-link {
+  grid-column: 3/4;
+}
+
+.menu-link ul {
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+/* ----------- Grid part ends ----------------- */
+
+
+.menu-link ul li {
+  font-size: 1.8rem;
+}
+
+ .facbutton{
+  font-size: 15px;
+  color:black;
+ }
+ 
+
+.iiitim{
+  width:80px;
+  height:80px;
+  margin-right: 5px;
+  background-color:transparent;
+}
+
+/* hero section   */
+.text-on-image{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:#fff;
+  font-size:3rem;
+}
+
+.text-on-image1{
+  position: absolute;
+  color: rgb(18, 225, 66);
+  font-size:larger;
+  right:50%;
+  left:35%;
+  bottom:60%;
+  font-size: 22px;
+}
+a{
+  font-size: 10px;
+}
+
+
+/* responsive css style  */
+@media (max-width: 1080px) {
+  .main-nav {
+    height: 8rem;
+    grid-template-columns: 2rem 3fr 3fr 1fr 2rem;
+  }
+
+  
+  .menu-link ul,
+  .social-media ul {
+    height: 5rem;
+  }
+}
+
+/* responsive css style  */
+@media (max-width: 998px) {
+  .main-nav {
+    height: 7rem;
+    grid-template-columns: 2rem 2fr 3fr 2rem 2rem;
+  }
+
+  .iiitim{
+    margin-left:0px;
+    width:80px;
+    height:80px;
+    background-color:transparent;
+  }
+  
+ 
+  
+}
+
+
+
+@media (max-width: 520px) {
+  .main-nav {
+    height: 3rem;
+    grid-template-columns: 1rem 4fr 1fr 1fr 1rem;
+  }
+
+  .logo,
+  .social-media ul {
+    height: 3rem;
+  }
+
+  .logo h2 {
+    font-size: 0.5rem;
+  }
+
+  
+}

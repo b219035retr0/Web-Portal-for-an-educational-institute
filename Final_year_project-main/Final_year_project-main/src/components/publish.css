@@ -1,0 +1,22 @@
+.main-cardd1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .xx1 {
+    flex-basis: 100%;
+  }
+  
+  .publication-card1 {
+    flex-basis: calc(50% - 10px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .publication-card1 {
+      flex-basis: 100%;
+      margin-right: 0;
+    }
+  }
+  

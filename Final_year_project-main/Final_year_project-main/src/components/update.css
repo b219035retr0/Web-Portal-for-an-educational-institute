@@ -1,0 +1,41 @@
+/* CSS for desktop screens */
+
+  
+  input[type="text"] {
+    width: 45%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+   
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  /* CSS for smaller screens */
+  @media screen and (max-width: 768px) {
+    .div1 {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    input[type="text"] {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+
+  
+
+  }
+
+
+ 
+  

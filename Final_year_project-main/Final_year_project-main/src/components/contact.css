@@ -1,0 +1,133 @@
+.contact-container {
+    display: flex;
+    /* flex-direction: column; */
+    margin-top: 80px ;
+    /* width:90vw; */
+    margin:auto;
+    justify-content: space-evenly;
+  }
+  .contact-address{
+    width:400px;
+  }
+  .contact-address h2{
+    /* margin-top: 20px; */
+    font-size: large;
+    font-weight:600;
+    text-align: left;
+    
+  }
+  .contact-address p{
+    text-align: left;
+    font-size: large;
+  }
+  .contact-map iframe{
+    height:100%;
+    width:100%;
+  }
+  .contact-map h2{
+    /* margin-top: 20px; */
+    font-size: large;
+    font-weight:600;
+    text-align: left;
+    
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .contact-container {
+      flex-direction: row;
+      justify-content: space-between;
+      
+    }
+    .contact-address {
+      width: 25%;
+    }
+    .contact-map{
+      width:40%;
+    }
+    
+  }
+
+  .links1{
+    font-size: 1.8rem;
+    line-height:2.5;
+
+    text-decoration: underline;
+
+  }
+
+  .link-ul{
+    display: block;
+    text-align: left;
+    font-size: large;
+  }
+  
+  /* .contact-address {
+    margin-bottom: 2rem;
+  } */
+  
+  /* .contact-map {
+    flex: 1;
+    height: 400px;
+  } */
+/*   
+  @media only screen and (min-width: 768px) {
+    .contact-address {
+      flex: 1;
+      margin-right: 2rem;
+    }
+  
+    .contact-map {
+      flex: 1;
+    }
+  } */
+  
+  .sociall{
+    display: flex;
+    width:40px;
+    height:40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 80px;
+    background-color: #00c2cb;
+    margin-right:20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+
+.responsive{
+  justify-content: space-evenly;
+}
+  @media screen and (max-width: 768px) {
+
+    .contact-address {
+      width: 100%;
+      margin-bottom: 20px;
+
+    }
+    .contact-container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 80px;
+      margin: auto;
+      justify-content: space-evenly;
+  }
+  .responsive{
+    flex-direction: column;
+  }
+  
+    .sociall{
+      display: flex;
+      width:30px;
+      height:30px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 80px;
+      background-color: #00c2cb;
+      margin-right:20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+  }
+  

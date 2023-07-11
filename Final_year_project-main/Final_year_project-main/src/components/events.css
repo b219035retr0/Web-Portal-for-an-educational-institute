@@ -1,0 +1,22 @@
+tr{
+    border-top:2px solid rgb(219, 218, 218);
+   
+}
+
+.bt {
+padding:7px 10px;
+background-color:rgb(8, 39, 65);
+color:white;
+font-size:1.5rem;
+}
+
+.tdd{
+    text-align: left;
+    padding:20px 10px;
+}
+
+.ap{
+    color: rgb(8, 39, 65);
+    margin-left:5px;
+    font-size:1.4rem;
+}

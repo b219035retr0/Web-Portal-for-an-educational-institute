@@ -1,0 +1,111 @@
+* { box-sizing:border-box; }
+
+
+
+img { background-color:white; padding:5px;}
+.cimage{
+  width:350px;
+  height:280px;
+}
+.imageee{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.cascade-slider_container {
+  position: relative;
+  width: 100vw;
+  height: 55vh;
+  margin: 0 0;
+  padding:0px 10px;
+  background-color:#E6E6FA;
+  color:white;
+  object-fit: cover;
+  object-position: center;
+  /* background-image: url("https://iiit-placement-website-v2.vercel.app/_next/image?url=%2Finfra%2F10.jpg&w=2048&q=75"); */
+}
+
+.cascade-slider_item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%) perspective(300px) rotateX(0deg) rotateY(0deg) scale(.4);
+  transition: all 2s ease-in;
+  opacity: 0;
+  z-index: -1;
+}
+
+.cascade-slider_item.next {
+  left: 50%;
+  transform: translateY(-50%) translateX(-150%) perspective(300px) rotateX(0deg) rotateY(-27deg) scale(.8);
+;
+  opacity: 1;
+  z-index: 1;
+}
+
+.cascade-slider_item.prev {
+  left: 50%;
+  transform: translateY(-50%) translateX(50%) perspective(300px) rotateX(0deg) rotateY(27deg) scale(.8);
+;
+  opacity: 1;
+  z-index: 1;
+}
+
+.cascade-slider_item.now {
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%) perspective(300px) rotateX(0deg) rotateY(0deg) scale(1);
+;
+  opacity: 1;
+  z-index: 5;
+}
+
+.cascade-slider_arrow {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  z-index: 5;
+  color:#E6E6FA
+}
+
+.cascade-slider_arrow-left { left: 0; }
+
+.cascade-slider_arrow-right { right: 0; }
+
+.cascade-slider_nav {
+  position: absolute;
+  bottom: -120px;
+  width: 100%;
+  text-align: center;
+  z-index: 5;
+}
+
+.cascade-slider_dot {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin: 1em;
+  background: #ddd;
+  list-style: none;
+  cursor: pointer;
+}
+
+.cascade-slider_dot:hover { background: #555; }
+
+.cascade-slider_dot.cur { background: #555; }

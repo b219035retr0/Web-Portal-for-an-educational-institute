@@ -1,0 +1,92 @@
+
+  .containers {
+    display:flex;
+    width:100%;
+   justify-content: space-between;
+   /* background-color: yellow; */
+   padding:0 10px 10px 10px;
+  }
+  
+ 
+
+ 
+  /* .user-info {
+    flex-basis: 50%;
+    text-align: center;
+  } */
+  
+  .avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  
+  .name {
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .location {
+    margin-top: 10px;
+    font-size: 24px;
+  }
+  
+  .bio {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .user-projects,
+  .user-skills,
+  .user-experience {
+    flex-basis: calc(33.33% - 20px);
+    margin: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .user-projects ul,
+  .user-skills ul,
+  .user-experience ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .user-projects li,
+  .user-skills li,
+  .user-experience li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .user-projects li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .user-projects li a:hover {
+    text-decoration: underline;
+  }
+  
+  .skill-box {
+    background-color: #9819e196;
+    color: #ffffff;
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-right: 8px;
+    font-size:1.3rem;
+  }
+  
